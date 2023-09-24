@@ -2,18 +2,19 @@
 import Button from "react-bootstrap/Button";
 import Navbar from "react-bootstrap/Navbar";
 import "./style.css";
-// import Image from "../../../Assets/img";
 import Link from "next/link";
 import MyModalTicket from "@/components/modal/modalChat";
 import MyVerticallyCenteredModal from "@/components/modal/modalNotif";
-// import MydModalWithGrid from "@/components/modal/modalTiket";
+import MydModalWithGrid from "@/components/modal/modalTiket";
 // import { useEffect } from "react";
 // import { useSelector, useDispatch } from "react-redux";
 // import { detailProfile } from "../../../Config/redux/actions/profile";
 
 function NavbarComponent() {
   // { search, submitSearch, id }
-  const token = localStorage.getItem("Ankasa");
+  const token = localStorage.getItem("token");
+  console.log(token)
+  const profile = localStorage.getItem("profile");
   // const { profile } = useSelector((state) => state.profile);
 
   // const dispatch = useDispatch();
@@ -91,31 +92,25 @@ function NavbarComponent() {
           <Navbar expand="lg" className="d-flex">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse>
-              {/* <button className="btn"> */}
-                {/* <MydModalWithGrid /> */}
-              {/* </button> */}
+              <button className="btn">
+                <MydModalWithGrid />
+              </button>
               <Link
                 href="/MyBooking"
                 style={{ textDecoration: "none", color: "black" }}
-                className="px-lg-3 mt-lg-1"
-              >
-                <h6> Find Ticket</h6>
-              </Link>
-              <Link
-                href="/MyBooking"
-                style={{ textDecoration: "none", color: "black" }}
-                className="px-lg-3 mt-lg-1"
+                className="px-lg-3 mt-lg-2"
               >
                 <h6> My Booking</h6>
               </Link>
               {token ? (
                 <div className=" px-lg-4 d-flex justify-content-end">
-                  {/* <MyModalTicket /> */}
+                  <MyModalTicket />
                   <MyVerticallyCenteredModal />
                   <Button variant="white" style={{ width: "4rem" }}>
-                    <Link href="/profile">
+                    <Link href="/users/profile">
                       <img
-                        src={profile.photo}
+                        src={profile ? profile.photo : 'https://static.vecteezy.com/system/resources/thumbnails/009/734/564/small/default-avatar-profile-icon-of-social-media-user-vector.jpg'}
+                        // src='/img/fly.png'
                         alt=""
                         style={{
                           verticalAlign: "middle",

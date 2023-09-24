@@ -3,9 +3,6 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Modal from 'react-bootstrap/Modal';
-// import p1 from '../../../Assets/img/p1.png'
-// import gr5 from '../../../Assets/img/gr5.png'
-// import g10 from '../../../Assets/img/g10.png'
 
 
 

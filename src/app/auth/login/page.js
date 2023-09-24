@@ -12,39 +12,45 @@ export default function Login() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-
+  
     // Create an object with the user's credentials
     const credentials = {
       email,
       password,
     };
-
-    console.log(credentials)
-
+  
     try {
       // Make a POST request to the API endpoint for login
-      const response = await fetch('https://easy-lime-seal-toga.cyclic.app/users/login', {
+      const response = await fetch('https://easy-lime-seal-toga.cyclic.app/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(credentials),
       });
-
+  
       if (response.ok) {
+        const data = await response.json();
+        const authToken = data.data.access_token; // Assuming the API response contains a 'token' field
+        console.log(data)
+        console.log(authToken)
+  
+        // Store the token in local storage
+        localStorage.setItem('token', authToken);
+  
         Swal.fire({
           icon: "success",
           title: "Login Success!",
           timer: 2000,
           showConfirmButton: false
-        })
+        });
+  
         // Handle successful login, e.g., redirect to another page
         // You can replace the alert with your desired behavior
-        // alert('Login successful');
-        router.push('/profile/myProfil');
+        router.push('/landing');
       } else {
         // Handle login failure
-        console.log(response)
+        console.log(response);
         setErrorMessage('Wrong password or username.');
       }
     } catch (error) {
@@ -53,6 +59,7 @@ export default function Login() {
       setErrorMessage('An error occurred. Please try again later.');
     }
   };
+  
   return (
     <div className="container-fluid" >
       <div className="row" style={{ height: '100vh' }}>
@@ -87,8 +94,8 @@ export default function Login() {
                   className="form-control-plaintext border-bottom"
                   placeholder="Password"
                   value={password}
-              onChange={(e) => setPassword(e.target.value)}
-                />
+                  onChange={(e) => setPassword(e.target.value)}
+                  />
               </div>
               <button
                 type="submit"

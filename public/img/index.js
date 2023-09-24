@@ -20,7 +20,7 @@ import u8 from "./u8.png";
 import u6 from "./u6.png";
 import b2 from "./b2.png";
 
-const Image = {
+const Imag = {
   logoAuth,
   u9,
   b1,
@@ -41,4 +41,4 @@ const Image = {
   Ig,
   Yt,
 };
-export default Image;
+export default Imag;
