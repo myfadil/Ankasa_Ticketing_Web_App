@@ -12,7 +12,7 @@ import MydModalWithGrid from "@/components/modal/modalTiket";
 
 function NavbarComponent() {
   // { search, submitSearch, id }
-  const token = localStorage.getItem("token");
+  const token= localStorage.getItem("token");
   console.log(token)
   const profile = localStorage.getItem("profile");
   // const { profile } = useSelector((state) => state.profile);
@@ -96,7 +96,7 @@ function NavbarComponent() {
                 <MydModalWithGrid />
               </button>
               <Link
-                href="/MyBooking"
+                href="/users/mybooking"
                 style={{ textDecoration: "none", color: "black" }}
                 className="px-lg-3 mt-lg-2"
               >

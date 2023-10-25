@@ -23,7 +23,7 @@ export default function Register() {
     console.log(userData);
 
     try {
-      const response = await fetch('https://easy-lime-seal-toga.cyclic.app/users/register', {
+      const response = await fetch('https://easy-lime-seal-toga.cyclic.app/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -40,8 +40,9 @@ export default function Register() {
         // alert('Registration successful');
         router.push('/auth/login');
       } else {
-        console.log(response)
-        setErrorMessage('Registration failed. Please check your information.');
+        const error = await response.json();
+        console.log(error)
+        setErrorMessage(error.message);
       }
     } catch (error) {
       console.error('Error:', error);

@@ -8,11 +8,13 @@ const Ticket = ({
   departure_code,
   arrival_city,
   arrival_code,
+  interval,
   transit,
   departure,
   arrive,
   price,
-  onClick,
+  facilities,
+  onClick
 }) => {
   const time = () => {
     if (departure && arrive) {
@@ -32,6 +34,12 @@ const Ticket = ({
       return hours + "  hours  " + minutes + "  minutes ";
     }
   };
+
+  const imageUrls = [
+    "https://res.cloudinary.com/dnu5su7ft/image/upload/v1672061589/koper.png",
+    "https://res.cloudinary.com/dnu5su7ft/image/upload/v1672061634/burger.png",
+    "https://res.cloudinary.com/dnu5su7ft/image/upload/v1672061667/wifi.png",
+  ];
 
   return (
     <div className={`${style.main} card mb-4 `}>
@@ -65,32 +73,19 @@ const Ticket = ({
             </p>
             <p className="text-muted fs-6 fw-light">{arrive}</p>
           </div>
-          <div className="flex-column">
-            <p className="p-0 m-0 text-muted fw-normal">{time()}</p>
+          <div className="flex-row">
+            <p className="p-0 m-0 text-muted fw-normal">{interval}</p>
             <p className="text-muted fw-light"> ({transit} transit)</p>
           </div>
-          <div className="justify-content-between p-3 ms-3">
-            <img
-              src={
-                "https://res.cloudinary.com/dnu5su7ft/image/upload/v1672061589/koper.png"
-              }
-              alt="luggage-logo"
-              className="ms-3 me-3"
-            />
-            <img
-              src={
-                "https://res.cloudinary.com/dnu5su7ft/image/upload/v1672061634/burger.png"
-              }
-              alt="food-logo"
-              className="ms-3 me-3"
-            />
-            <img
-              src={
-                "https://res.cloudinary.com/dnu5su7ft/image/upload/v1672061667/wifi.png"
-              }
-              alt="wifi-logo"
-              className="ms-3 "
-            />
+          <div className="d-flex flex-column justify-content-between p-1 gap-2 h-100">
+          {facilities?.map((facility, i) => (
+                <div key={i}>
+                    <img
+                        src={imageUrls[i]}
+                        alt={`facility-${i}`}
+                    />
+                </div>
+          ))}
           </div>
           <div className="d-flex">
             <p className="text-muted m-2 ">

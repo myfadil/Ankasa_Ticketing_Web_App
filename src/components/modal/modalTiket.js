@@ -121,12 +121,12 @@ function MydModalWithGrid(props) {
           </div>
 
           <button
-            href="/searchbooking"
+            href="/users/SearchBooking"
             type="button"
             className="col-12 btn btn-primary"
           >
             <Link
-              href="/searchbooking"
+              href="/users/SearchBooking"
               className="d-flex justify-content-between p-2"
             >
               <b style={{ color: "white" }}>SEARCH FLIGHT</b>

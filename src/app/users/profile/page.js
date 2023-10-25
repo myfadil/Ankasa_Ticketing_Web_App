@@ -4,10 +4,12 @@ import Footer from "@/components/footer/footer";
 import NavbarComponent from "@/components/header/index";
 import ProfileCard from "@/components/profileCard/index";
 import styles from "./Profile.module.css";
+import { useRouter } from "next/navigation";
 
 const Profile = (props) => {
   const [profileData, setProfileData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
+  const router = useRouter()
 
   useEffect(() => {
     // Mengambil token dari localStorage
@@ -37,6 +39,7 @@ const Profile = (props) => {
     } else {
       // Handle jika token tidak tersedia
       console.error("Token not found in localStorage");
+      router.push("/landing");
       setIsLoading(false);
     }
   }, []);

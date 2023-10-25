@@ -22,14 +22,20 @@ const ProfileCard = ({
   // const navigate = useNavigate();
   const router = useRouter()
   
-  const handleLogout = async () => {
-    await localStorage.clear();
-    Swal.fire({
-      title: "Log Out",
-      text: `Log Out Success`,
-      icon: "success",
-    });
+  const handleLogout = () => {
+    if (localStorage.getItem("token")) {
+      setTimeout(() => {
+        router.push("/landing");
+      }, 2000);
+      Swal.fire({
+        title: "Log Out",
+        text: `Log Out Success`,
+        icon: "success",
+      });
+      return localStorage.clear();
+    }
   };
+
   return (
     <div className={styles.profileCard}>
       <div className={styles.wraperProfile}>
