@@ -2,6 +2,7 @@
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function ForgotPaswword() {
   return (
@@ -9,12 +10,12 @@ export default function ForgotPaswword() {
       <div className="row" style={{ height: '100vh' }}>
         <div className="col-md-6 bg-primary d-flex align-items-center justify-content-center" >
           {/* Gambar atau konten di sisi kiri */}
-          <img src="/gambar-login.png" alt="Gambar Login" className='col-md-6'/>
+          <Image src="/gambar-login.png" alt="Gambar Login" className='col-md-6' width={500} height={500}/>
         </div>
         <div className="col-md-6 d-flex flex-column align-items-center">
           {/* Form login di sisi kanan */}
           <div className="pt-5 pb-5 mb-5 mb-5 col-md-5 ml-auto">
-            <img src="/icon auth.png" alt="Gambar Login" />
+            <Image src="/icon auth.png" alt="Gambar Login" width={100} height={100} />
           </div>
             <h2 className="col-md-5 ml-auto mb-5 fw-bold">Forgot Paswword</h2>
             <form>
