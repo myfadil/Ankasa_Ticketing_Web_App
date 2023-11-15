@@ -6,24 +6,18 @@ import Link from "next/link";
 import MyModalTicket from "@/components/modal/modalChat";
 import MyVerticallyCenteredModal from "@/components/modal/modalNotif";
 import MydModalWithGrid from "@/components/modal/modalTiket";
-// import { useEffect } from "react";
-// import { useSelector, useDispatch } from "react-redux";
-// import { detailProfile } from "../../../Config/redux/actions/profile";
+import { useEffect, useState } from "react";
+
 
 function NavbarComponent() {
-  // { search, submitSearch, id }
-  const token= localStorage.getItem("token");
-  console.log(token)
-  const profile = localStorage.getItem("profile");
-  // const { profile } = useSelector((state) => state.profile);
-
-  // const dispatch = useDispatch();
-
-  // useEffect(() => {
-  //   const localdata = localStorage.getItem("Ankasa");
-  //   const { token } = JSON.parse(localdata);
-  //   dispatch(detailProfile(token));
-  // }, []);
+  const [token, setToken] = useState()
+  const [profile, setProfile] = useState()
+  useEffect(() => {
+    const storedToken = localStorage.getItem("token")
+    const profile = localStorage.getItem("profile")
+    setProfile(profile)
+    setToken(storedToken)
+  }, [])
 
   return (
     <div className=" bg-white">

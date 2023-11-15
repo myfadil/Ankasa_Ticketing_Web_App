@@ -74,7 +74,7 @@ function DetailFlightPage(props) {
         showConfirmButton: false,
         timer: 1500
       })
-      router.push(`/users/mybooking/bookingpass/${result.data.data.code}`);
+      router.push(`/users/mybooking}`);
     } catch (error) {
       console.log(error);
       Swal.fire({
@@ -209,7 +209,7 @@ function DetailFlightPage(props) {
               <div
                   className="card"
                   style={{
-                    height: "25rem",
+                    height: "27rem",
                     width: "40rem",
                     borderRadius: "10px",
                   }}
@@ -251,16 +251,16 @@ function DetailFlightPage(props) {
                         }}
                       >
                         <h4
-                          className="flight"
+                          className="flight px-2"
                           onChange={(e) => handleChange(e)}
                           style={{marginLeft: "1rem"}}
                         >
-                          {data?.to.country} ({data?.to.code})
+                          {data?.to.country} <br/> ({data?.to.code})
                         </h4>
                       </div>
                     </Col>
                     <Col xs={3}>
-                      <div className="fly" style={{ marginLeft: "6rem" }}>
+                      <div className="fly px-1" style={{ marginLeft: "6rem" }}>
                         <img src='/img/plan.png' alt="" height={20} />
                       </div>
                     </Col>
@@ -271,7 +271,7 @@ function DetailFlightPage(props) {
                         style={{ width: "16rem", marginLeft: "1rem" }}
                       >
                         <h4 className="flight">
-                          {data?.from.country} ({data?.from.code})
+                          {data?.from.country} <br/> ({data?.from.code})
                         </h4>
                       </div>
                     </Col>
@@ -346,7 +346,7 @@ function DetailFlightPage(props) {
                     <Container>
                       <Row>
                         <Col xs={6} md={4}>
-                          <div className="total mt-3">
+                          <div className="total mt-1">
                             <h4>Total Payment</h4>
                           </div>
                         </Col>

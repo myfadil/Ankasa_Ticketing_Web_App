@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { Accordion } from 'react-bootstrap';
 import './style.css';
+import Link from 'next/link';
 
 function CardBookingTiketStatus() {
   const [Flight, setFlight] = useState([]);
@@ -62,10 +63,10 @@ function CardBookingTiketStatus() {
               <p className='fw-bold text-primary'>Order History</p>
             </div>
           </div>
-          <div className='pt-5'>
+          <div className='pt-5 d-flex row gap-5'>
           {Flight.map((booking, index) => (                      
           <div className='card d-flex' key={index}>
-            <div className='card-header'>
+            <div className='card-header bg-white'>
               <h6 className='date fs-6 p-3'>{formatDate(booking.passenger.updatedAt)}</h6>
             <div className='d-flex gap-4 col-4 px-3'>
               <h3 className='fw-bolder'>({booking.ticket.from?.code})</h3>
@@ -80,15 +81,22 @@ function CardBookingTiketStatus() {
             <button className='btn btn-success my-2 mx-5'style={{ borderRadius: '5px', backgroundColor: booking.status.name === 'Pending' ? '#FF7F23' : 'green' }} >{booking.status.name}</button>
             </div>
             <div  className='d-flex align-items-center mx-4'>
-              <Accordion>
-                <Accordion.Item eventKey="0">
-                  <Accordion.Header>View Details</Accordion.Header>
-                  <Accordion.Body>
-                    <p>View Details</p>
-                  </Accordion.Body>
-                  </Accordion.Item>
-              </Accordion>
-              {/* <h6 className='p-4 fw-bold' style={{color: 'blue'}}>View Details </h6> */}
+            <Accordion>
+              <Accordion.Item eventKey="0">
+                <Accordion.Header>View Details</Accordion.Header>
+                <Accordion.Body>
+                  { booking.status.id === 1 ? (
+                    <Link
+                    href={`/users/mybooking/payment/${booking.code}`}
+                     >Procced to Payment</Link>
+                  ) : (
+                    <Link
+                    href={`/users/mybooking/bookingpass/${booking.code}`}
+                     >Get Ticket</Link>
+                  ) }
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
             </div>
             </div>
           </div>

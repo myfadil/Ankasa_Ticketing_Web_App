@@ -15,33 +15,10 @@ const SearchBooking = (props) => {
   const [selected, setSelected] = useState(null);
   const router = useRouter(); // Initialize useRouter
 
-  // const initialState = {
-  //   ticket: [],
-  //   id: "",
-  //   isLoading: false,
-  // };
-  // function reducer(state = initialState, action) {
-  //   switch (action.type) {
-  //     case "GET_TICKET_ID":
-  //       return {
-  //         ...state,
-  //         id: action.payload,
-  //       };
-  //     default:
-  //       return state;
-  //   }
-  // }
-  // const [dispatch] = useReducer(reducer, {});
-
   const handleClickTiket = (id) => {
     router.push(`/users/SearchBooking/${id}`);
   };
 
-  // useEffect(() => {
-  //   getData();
-  // }, []);
-
-  //search filter
   const queryTransit = router?.query?.transit || "";
   const queryFacilities = router?.query?.facilities || "";
   const queryDeparture = router?.query?.departure || "";
@@ -59,7 +36,6 @@ const SearchBooking = (props) => {
   const [maxPrice, setMaxPrice] = useState(queryMaxPrice);
   const [isFilter, setIsFilter] = useState(false);
 
-  // console.log(transit);
 
   const searchfilter = (e) => {
     e.preventDefault();
@@ -114,7 +90,7 @@ const SearchBooking = (props) => {
   };
 
   //sorting
-  const [setSortState] = useState("");
+  const [sortState, setSortState] = useState("");
 
   //pagination
   const [search, setSearch] = useState("");
