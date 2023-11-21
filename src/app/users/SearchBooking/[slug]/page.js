@@ -77,9 +77,18 @@ function DetailFlightPage(props) {
       router.push(`/users/mybooking}`);
     } catch (error) {
       console.log(error);
-      Swal.fire({
-        title: "Oops!",
-      })
+      if (!token) {
+        Swal.fire({
+          title: "Oops!",
+          text: `Please login first`,
+          icon: "error",
+        })
+        router.push("/auth/login");
+      } else {
+        Swal.fire({
+          title: "Oops Something Wrong!",
+        })
+      }
     }
   };
 
