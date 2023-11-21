@@ -82,19 +82,22 @@ npm run dev
 
 | Register Page                                                                                                                  | Login Page                                                                                           |
 | ------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
-| [![register-page.png](https://i.postimg.cc/h4Xb5wvc/register-page.png)](https://postimg.cc/HjCyJ6bh) | [![Angkasa-Login.png](https://i.postimg.cc/V6hXVCr2/Angkasa-Login.png)](https://postimg.cc/bDQGGdRR) |
+| [![register-page.png](https://i.postimg.cc/h4Xb5wvc/register-page.png)](https://postimg.cc/HjCyJ6bh) | [![Login.png](https://res.cloudinary.com/dtqweiec5/image/upload/v1700590824/ankasa%20readme/login_page_dofuiv.png)](https://res.cloudinary.com/dtqweiec5/image/upload/v1700590824/ankasa%20readme/login_page_dofuiv.png) |
 
 |                                                    Landing Page                                                    |                                                 Find Ticket Page                                                 |
 | :----------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------: |
-| [![Angkasa-Landing-Page.png](https://i.postimg.cc/YqDf4TCt/Angkasa-Landing-Page.png)](https://postimg.cc/dLdTpHCf) | [![Angkasa-Find-Ticket.png](https://i.postimg.cc/HnzG4dPZ/Angkasa-Find-Ticket.png)](https://postimg.cc/D4SY7khL) |
+| [![Landing-Page.png](https://res.cloudinary.com/dtqweiec5/image/upload/v1700591110/ankasa%20readme/landing_page_veoxta.png)](https://res.cloudinary.com/dtqweiec5/image/upload/v1700591110/ankasa%20readme/landing_page_veoxta.png) | [![Angkasa-Find-Ticket.png](https://res.cloudinary.com/dtqweiec5/image/upload/v1700591111/ankasa%20readme/find_ticket_page_ew5c1b.png)](https://res.cloudinary.com/dtqweiec5/image/upload/v1700591111/ankasa%20readme/find_ticket_page_ew5c1b.png) |
 
 |                                                Mybooking Page                                                |                                               Profile Page                                               |
 | :----------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
-| [![Angkasa-Mybooking.png](https://i.postimg.cc/W3xNdMHN/Angkasa-Mybooking.png)](https://postimg.cc/Q9kGPWDw) | [![Angkasa-Profile.png](https://i.postimg.cc/JzR1H7Pk/Angkasa-Profile.png)](https://postimg.cc/zVPm9Nmz) |
+| [![Angkasa-Mybooking.png](https://res.cloudinary.com/dtqweiec5/image/upload/v1700591108/ankasa%20readme/mybooking_page_fuptpm.png)](https://res.cloudinary.com/dtqweiec5/image/upload/v1700591108/ankasa%20readme/mybooking_page_fuptpm.png) | [![Angkasa-Profile.png](https://res.cloudinary.com/dtqweiec5/image/upload/v1700591109/ankasa%20readme/profile_page_nsmye3.png)](https://res.cloudinary.com/dtqweiec5/image/upload/v1700591109/ankasa%20readme/profile_page_nsmye3.png) |
 
-|                                                  Detail Ticket Page                                                  |                                               Booking Page                                               |
+|                                                  Booking Pass Page                                                  |                                               Booking Page                                               |
 | :------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
-| [![Angkasa-Detail-Ticket.png](https://i.postimg.cc/t4rH13sK/Angkasa-Detail-Ticket.png)](https://postimg.cc/CRf2XfH7) | [![Angkasa-Booking.png](https://i.postimg.cc/bNpX3CkX/Angkasa-Booking.png)](https://postimg.cc/9z8NfBL1) |
+| [![Booking-Pass.png](https://res.cloudinary.com/dtqweiec5/image/upload/v1700591110/ankasa%20readme/booking_pass_page_moycth.png)](https://res.cloudinary.com/dtqweiec5/image/upload/v1700591110/ankasa%20readme/booking_pass_page_moycth.png) | [![Angkasa-Booking.png](https://res.cloudinary.com/dtqweiec5/image/upload/v1700591478/ankasa%20readme/booking_ticket_ulvgf0.png)](https://res.cloudinary.com/dtqweiec5/image/upload/v1700591478/ankasa%20readme/booking_ticket_ulvgf0.png) |
+
+|                                                  payment Page                                                  | :------------------------------------------------------------------------------------------------------------------: |
+| [![Payment.png](https://res.cloudinary.com/dtqweiec5/image/upload/v1700591109/ankasa%20readme/payment_page_ckoqvx.png)](https://res.cloudinary.com/dtqweiec5/image/upload/v1700591109/ankasa%20readme/payment_page_ckoqvx.png) |
 
 ## Contributing
 
