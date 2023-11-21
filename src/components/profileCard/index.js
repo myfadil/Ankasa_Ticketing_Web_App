@@ -25,7 +25,7 @@ const ProfileCard = ({
   const handleLogout = () => {
     if (localStorage.getItem("token")) {
       setTimeout(() => {
-        router.push("/landing");
+        router.push("/");
       }, 2000);
       Swal.fire({
         title: "Log Out",
@@ -98,7 +98,7 @@ const ProfileCard = ({
           </button>
         </div>
         {/* logout */}
-        <div className="d-flex justify-content-between" onClick={() => { handleLogout(); router.push('/landing'); }}>
+        <div className="d-flex justify-content-between" onClick={() => { handleLogout(); router.push('/'); }}>
           <button className="btn">
             <Image src={Imag.u6} alt="" />
           </button>

@@ -48,7 +48,7 @@ export default function Login() {
   
         // Handle successful login, e.g., redirect to another page
         // You can replace the alert with your desired behavior
-        router.push('/landing');
+        router.push('/');
       } else {
         // Handle login failure
         console.log(response);
