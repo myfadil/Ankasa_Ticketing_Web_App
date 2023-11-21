@@ -77,7 +77,7 @@ function DetailFlightPage(props) {
       router.push(`/users/mybooking}`);
     } catch (error) {
       console.log(error);
-      if (!token) {
+      if (!localStorage.getItem("token")) {
         Swal.fire({
           title: "Oops!",
           text: `Please login first`,
