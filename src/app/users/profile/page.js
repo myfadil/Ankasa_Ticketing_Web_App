@@ -39,7 +39,7 @@ const Profile = (props) => {
     } else {
       // Handle jika token tidak tersedia
       console.error("Token not found in localStorage");
-      router.push("/landing");
+      router.push("/");
       setIsLoading(false);
     }
   }, []);

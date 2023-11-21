@@ -1,34 +1,121 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<br/>
+<p align="center">
+  <a href="https://github.com/aliffath/Angkasa-Web-App">
+    <img height="150" src="https://i.ibb.co/WFZVxPb/arkasa-logo.png" alt="logo" />
+  </a>
 
-## Getting Started
+  <h3 align="center">Ankasa Web</h3>
 
-First, run the development server:
+  <p align="center">
+    <br/>
+    <br/>
+    <a href="https://github.com/myfadil/Ankasa_Ticketing_Web_App"><strong>Explore the docs »</strong></a>
+    <br/>
+    <br/>
+    <a href="https://ankasa-orcin.vercel.app/">View Demo</a>
+    .
+    <a href="https://github.com/myfadil/Ankasa_Ticketing_Web_App/issues">Report Bug</a>
+    .
+    <a href="https://github.com/myfadil/Ankasa_Ticketing_Web_App/issues">Request Feature</a>
+  </p>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## Table Of Contents
+
+- [About the Project](#about-the-project)
+- [Built With](#built-with)
+- [Installation](#installation)
+- [Contributing](#contributing)
+- [Related Project](#related-project)
+- [Contact](#contact)
+
+## About The Project
+
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ankasa Web project is a front-end web application designed to provide a seamless and user-friendly platform for booking and exploring a diverse range of flight tickets. This project makes use of cutting-edge technologies including Node.js, Next.js, Bootstrap, React-Bootstrap and CSS. Whether you're an avid traveler searching for flight options, planning your next vacation, or just in need of booking assistance, this platform has got you covered.</p>
+
+## Built With
+
+This Web was built with some technologies below:
+
+- [Next Js](https://nextjs.org/)
+- [Axios](https://www.npmjs.com/package/axios)
+- [React Bootstrap](https://www.npmjs.com/package/react-bootstrap)
+
+### Prerequisites
+
+Before going to the installation stage there are some software that must be installed first.
+
+- **NodeJS**, I'm using **v18.16.0** when this docs is uploaded. You can download NodeJS in https://nodejs.org/en/download
+
+## Installation
+
+Install Ankasa Web with npm :
+
+- Clone the Repo
+
+```
+  git clone https://github.com/myfadil/Ankasa_Ticketing_Web_App
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Go To Folder Repo
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+  cd Ankasa-Project
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Install Module
 
-## Learn More
+```
+  npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+- Run Program
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  Type in repository path
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+npm run dev
+```
 
-## Deploy on Vercel
+## Screenshot
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Register Page                                                                                                                  | Login Page                                                                                           |
+| ------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
+| [![register-page.png](https://i.postimg.cc/h4Xb5wvc/register-page.png)](https://postimg.cc/HjCyJ6bh) | [![Angkasa-Login.png](https://i.postimg.cc/V6hXVCr2/Angkasa-Login.png)](https://postimg.cc/bDQGGdRR) |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+|                                                    Landing Page                                                    |                                                 Find Ticket Page                                                 |
+| :----------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------: |
+| [![Angkasa-Landing-Page.png](https://i.postimg.cc/YqDf4TCt/Angkasa-Landing-Page.png)](https://postimg.cc/dLdTpHCf) | [![Angkasa-Find-Ticket.png](https://i.postimg.cc/HnzG4dPZ/Angkasa-Find-Ticket.png)](https://postimg.cc/D4SY7khL) |
+
+|                                                Mybooking Page                                                |                                               Profile Page                                               |
+| :----------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
+| [![Angkasa-Mybooking.png](https://i.postimg.cc/W3xNdMHN/Angkasa-Mybooking.png)](https://postimg.cc/Q9kGPWDw) | [![Angkasa-Profile.png](https://i.postimg.cc/JzR1H7Pk/Angkasa-Profile.png)](https://postimg.cc/zVPm9Nmz) |
+
+|                                                  Detail Ticket Page                                                  |                                               Booking Page                                               |
+| :------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
+| [![Angkasa-Detail-Ticket.png](https://i.postimg.cc/t4rH13sK/Angkasa-Detail-Ticket.png)](https://postimg.cc/CRf2XfH7) | [![Angkasa-Booking.png](https://i.postimg.cc/bNpX3CkX/Angkasa-Booking.png)](https://postimg.cc/9z8NfBL1) |
+
+## Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Related Project
+
+:rocket: [`Frontend Angkasa Ticketing`](https://github.com/myfadil/Ankasa_Ticketing_Web_App)
+
+:rocket: [`Demo Project`](https://ankasa-orcin.vercel.app/)
+
+## Contact
+
+- Email : [`myfadil45@gmail.com`](mailto:myfadil45@gmail.com)
+
+- LinkedIn : [`Mohamad Yasin Fadillah`](https://www.linkedin.com/in/myfadillah/)
+
+- GitHub : [`Mohamad Yasin Fadillah`](https://github.com/myfadil)
