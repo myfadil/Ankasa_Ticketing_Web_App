@@ -96,7 +96,8 @@ npm run dev
 | :------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
 | [![Booking-Pass.png](https://res.cloudinary.com/dtqweiec5/image/upload/v1700591110/ankasa%20readme/booking_pass_page_moycth.png)](https://res.cloudinary.com/dtqweiec5/image/upload/v1700591110/ankasa%20readme/booking_pass_page_moycth.png) | [![Angkasa-Booking.png](https://res.cloudinary.com/dtqweiec5/image/upload/v1700591478/ankasa%20readme/booking_ticket_ulvgf0.png)](https://res.cloudinary.com/dtqweiec5/image/upload/v1700591478/ankasa%20readme/booking_ticket_ulvgf0.png) |
 
-|                                                  payment Page                                                  | :------------------------------------------------------------------------------------------------------------------: |
+|                                                  payment Page                                                  | 
+|:------------------------------------------------------------------------------------------------------------------: |
 | [![Payment.png](https://res.cloudinary.com/dtqweiec5/image/upload/v1700591109/ankasa%20readme/payment_page_ckoqvx.png)](https://res.cloudinary.com/dtqweiec5/image/upload/v1700591109/ankasa%20readme/payment_page_ckoqvx.png) |
 
 ## Contributing
